@@ -24,4 +24,8 @@ class UserLogin(SQLModel):
 
 class Token(SQLModel):
     access_token: str
+    refresh_token: str   # <--- Add this
     token_type: str
+
+class TokenRefresh(SQLModel):
+    refresh_token: str
