@@ -2,6 +2,7 @@ fastapi
 uvicorn[standard]
 sqlmodel
 alembic
+fastapi-pagination
 # Postgres drivers
 asyncpg
 psycopg2-binary

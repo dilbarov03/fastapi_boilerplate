@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi_pagination import add_pagination
+
 from app.core.config import settings
 from app.api.router import api_router
 from app.admin_page import setup_admin
@@ -16,6 +18,7 @@ def create_app() -> FastAPI:
         allow_methods=["*"],
         allow_headers=["*"],
     )
+    add_pagination(app)
 
     app.include_router(api_router, prefix="/api")
     setup_admin(app, async_engine)
