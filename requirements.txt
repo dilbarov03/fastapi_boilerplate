@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+sqlmodel
+alembic
+# Postgres drivers
+asyncpg
+psycopg2-binary
+# Security
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt==4.0.1
+python-multipart
+itsdangerous
+# Config
+pydantic-settings
+python-dotenv
+sqladmin
