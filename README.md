@@ -1,6 +1,3 @@
-A concise `README.md` for the FastAPI boilerplate project follows.
-
-```markdown
 # FastAPI Boilerplate
 
 Minimal FastAPI boilerplate for building REST APIs with database migrations and basic auth.
@@ -114,8 +111,3 @@ Configuration is loaded from the `core` module (see `app/core/config.py`).
 
 - Fork, create a feature branch, and open a pull request.
 - Keep changes small and focused; add migrations for any schema changes.
-
-## License
-
-- Add your preferred license (e.g., `MIT`) or update `README.md` to reflect project licensing.
-```
